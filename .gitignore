@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+# node-modules는 git에 올리지말라고 막아둔 것임. 그래서 깃허브에서 바로 다운로드 받으면 실행이 안됨. 그래서 다른 소스를 들고왔을 때 npm i를 쳐서 node-modules가 설치되고 작동이 됨.
 
 # testing
 /coverage
