@@ -23,7 +23,6 @@ const textInfo = [
     {text2 = "VISUAL CODING"},
     {text3 = "SOLUTIONS"},
     {text4 = "FOR YOU WEBS"}
-    
 ]
 
 function Main(){
@@ -31,12 +30,11 @@ function Main(){
         <div id="wrap">
             <Header/>
             <section id="mainCont">
-                <Info
-                    text1 = {textInfo.text1}
-                    text2 = {textInfo.text2}
-                    text3 = {textInfo.text3}
-                    text4 = {textInfo.text4}
-                />
+               <div className="main__cont">
+                   {textInfo.map((el) => (
+                       <Info text={el.text}/>
+                   ))}
+               </div>
             </section>
             <Footer/>
 
