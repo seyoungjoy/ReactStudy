@@ -12,34 +12,30 @@ import Footer from '../layout/Footer';
 
 // 클래스 컴퍼넌트
 
-function Info({text}){
-    return(
-        <div>{text}</div>
-    )
-}
+class Main extends React.Component{
+    state = {};
 
-const textInfo = [
-    {text1 = "WE PROVIDE"},
-    {text2 = "VISUAL CODING"},
-    {text3 = "SOLUTIONS"},
-    {text4 = "FOR YOU WEBS"}
-]
+    componentDidMount(){
 
-function Main(){
-    return(
-        <div id="wrap">
-            <Header/>
-            <section id="mainCont">
-               <div className="main__cont">
-                   {textInfo.map((el) => (
-                       <Info text={el.text}/>
-                   ))}
-               </div>
-            </section>
-            <Footer/>
-
-        </div>
-    )
+    }
+    render(){
+        return(
+            <div id="wrap">
+                <Header />
+                <main id="main">
+                    <section id="mainCont">
+                        <div className="main__cont">
+                            <div>We Provide</div>
+                            <div>visual coding</div>
+                            <div>solutions</div>
+                            <div>for you webs</div>
+                        </div>
+                    </section>
+                </main>
+                <Footer/>
+            </div>
+        )
+    }
 }
 
 // 함수를 클래스로 바꾸는 작업을 잘하는것이중요

@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function Header(){
+function Header(props){
     return (
-        <header id="header">
+        <header id="header" className={props.color}>
             <div className="header__port">
                 <Link to="/portfolio">portfolio</Link>
             </div>
